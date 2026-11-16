@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش مدل‌های هوش مصنوعی</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <h1>راهنمای مدل‌های AI</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#models" class="nav-link">مدل‌های متن‌باز</a></li>
+                <li><a href="#comparison" class="nav-link">مقایسه</a></li>
+                <li><a href="#apps" class="nav-link">برنامه‌ها</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">راهنمای جامع مدل‌های هوش مصنوعی</h2>
+                <div class="hero-author">Diako</div>
+                <p class="hero-subtitle">همه چیز درباره مدل‌های متن‌باز، مقایسه آن‌ها با مدل‌های تجاری و کاربردهای عملی</p>
+                <a href="#models" class="btn-primary">شروع کنید</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="models" class="section">
+            <div class="container">
+                <h2 class="section-title">مدل‌های متن‌باز محبوب</h2>
+                <p class="section-subtitle">بررسی کامل مدل‌های متن‌باز با جزئیات فنی</p>
+
+                <div class="cards-grid">
+                    <!-- Llama Models -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Llama 3.1</h3>
+                            <span class="badge badge-blue">Meta</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="model-info">
+                                <div class="info-item">
+                                    <span class="info-label">پارامترها:</span>
+                                    <span class="info-value">8B / 70B / 405B</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">حجم:</span>
+                                    <span class="info-value">4.7GB / 39GB / 231GB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Context Length:</span>
+                                    <span class="info-value">128K tokens</span>
+                                </div>
+                            </div>
+                            <p class="card-description">
+                                قدرتمندترین مدل متن‌باز Meta با قابلیت‌های پیشرفته در زبان‌های مختلف و استدلال پیچیده
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Multilingual</span>
+                                <span class="tag">Function Calling</span>
+                                <span class="tag">Instruct</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mistral Models -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Mistral 7B</h3>
+                            <span class="badge badge-purple">Mistral AI</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="model-info">
+                                <div class="info-item">
+                                    <span class="info-label">پارامترها:</span>
+                                    <span class="info-value">7B</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">حجم:</span>
+                                    <span class="info-value">4.1GB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Context Length:</span>
+                                    <span class="info-value">32K tokens</span>
+                                </div>
+                            </div>
+                            <p class="card-description">
+                                مدل کوچک و قدرتمند با عملکرد بهتر از مدل‌های بزرگ‌تر، مناسب برای استفاده روی سیستم‌های شخصی
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Fast</span>
+                                <span class="tag">Efficient</span>
+                                <span class="tag">Sliding Window</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mixtral Models -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Mixtral 8x7B</h3>
+                            <span class="badge badge-purple">Mistral AI</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="model-info">
+                                <div class="info-item">
+                                    <span class="info-label">پارامترها:</span>
+                                    <span class="info-value">8x7B (MoE)</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">حجم:</span>
+                                    <span class="info-value">26.4GB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Context Length:</span>
+                                    <span class="info-value">32K tokens</span>
+                                </div>
+                            </div>
+                            <p class="card-description">
+                                معماری Mixture of Experts با کارایی فوق‌العاده و سرعت بالا
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">MoE</span>
+                                <span class="tag">Multilingual</span>
+                                <span class="tag">Code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Qwen Models -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Qwen 2.5</h3>
+                            <span class="badge badge-red">Alibaba</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="model-info">
+                                <div class="info-item">
+                                    <span class="info-label">پارامترها:</span>
+                                    <span class="info-value">0.5B / 7B / 14B / 72B</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">حجم:</span>
+                                    <span class="info-value">0.4GB / 4.3GB / 8.3GB / 43GB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Context Length:</span>
+                                    <span class="info-value">128K tokens</span>
+                                </div>
+                            </div>
+                            <p class="card-description">
+                                مدل چینی قدرتمند با پشتیبانی عالی از زبان‌های مختلف و کدنویسی
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Multilingual</span>
+                                <span class="tag">Math</span>
+                                <span class="tag">Chinese</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DeepSeek Models -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>DeepSeek Coder V2</h3>
+                            <span class="badge badge-green">DeepSeek</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="model-info">
+                                <div class="info-item">
+                                    <span class="info-label">پارامترها:</span>
+                                    <span class="info-value">16B / 236B</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">حجم:</span>
+                                    <span class="info-value">9.4GB / 136GB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Context Length:</span>
+                                    <span class="info-value">128K tokens</span>
+                                </div>
+                            </div>
+                            <p class="card-description">
+                                متخصص کدنویسی با پشتیبانی از 338 زبان برنامه‌نویسی
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Coding</span>
+                                <span class="tag">338 Languages</span>
+                                <span class="tag">MoE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gemma Models -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Gemma 2</h3>
+                            <span class="badge badge-yellow">Google</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="model-info">
+                                <div class="info-item">
+                                    <span class="info-label">پارامترها:</span>
+                                    <span class="info-value">2B / 9B / 27B</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">حجم:</span>
+                                    <span class="info-value">1.6GB / 5.4GB / 16GB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Context Length:</span>
+                                    <span class="info-value">8K tokens</span>
+                                </div>
+                            </div>
+                            <p class="card-description">
+                                مدل سبک و کارآمد Google بر پایه تکنولوژی Gemini
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Efficient</span>
+                                <span class="tag">Mobile-Ready</span>
+                                <span class="tag">Safe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phi Models -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Phi-3</h3>
+                            <span class="badge badge-cyan">Microsoft</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="model-info">
+                                <div class="info-item">
+                                    <span class="info-label">پارامترها:</span>
+                                    <span class="info-value">3.8B / 7B / 14B</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">حجم:</span>
+                                    <span class="info-value">2.3GB / 4.4GB / 8.2GB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Context Length:</span>
+                                    <span class="info-value">128K tokens</span>
+                                </div>
+                            </div>
+                            <p class="card-description">
+                                مدل کوچک Microsoft با عملکرد شگفت‌انگیز، مناسب برای دستگاه‌های محدود
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Small</span>
+                                <span class="tag">Powerful</span>
+                                <span class="tag">Edge Device</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Falcon Models -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Falcon 180B</h3>
+                            <span class="badge badge-orange">TII</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="model-info">
+                                <div class="info-item">
+                                    <span class="info-label">پارامترها:</span>
+                                    <span class="info-value">7B / 40B / 180B</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">حجم:</span>
+                                    <span class="info-value">4.2GB / 24GB / 107GB</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Context Length:</span>
+                                    <span class="info-value">2K tokens</span>
+                                </div>
+                            </div>
+                            <p class="card-description">
+                                مدل متن‌باز از موسسه نوآوری فناوری امارات
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Commercial Use</span>
+                                <span class="tag">RefinedWeb</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparison" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">مقایسه مدل‌های متن‌باز و تجاری</h2>
+                <p class="section-subtitle">بررسی تفاوت‌ها و مزایای هر دسته</p>
+
+                <div class="comparison-container">
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <div class="comparison-header">
+                                <h3>مدل‌های متن‌باز</h3>
+                                <div class="comparison-icon open-source">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 16v-4M12 8h.01"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="comparison-list">
+                                <li class="pro">✓ رایگان و بدون محدودیت استفاده</li>
+                                <li class="pro">✓ اجرا روی سرور شخصی</li>
+                                <li class="pro">✓ کنترل کامل بر داده‌ها</li>
+                                <li class="pro">✓ قابل سفارشی‌سازی و Fine-tune</li>
+                                <li class="pro">✓ بدون نیاز به اینترنت (Local)</li>
+                                <li class="pro">✓ شفافیت کامل کد</li>
+                                <li class="con">✗ نیاز به سخت‌افزار قوی</li>
+                                <li class="con">✗ تنظیمات پیچیده‌تر</li>
+                                <li class="con">✗ سرعت کمتر در برخی موارد</li>
+                            </ul>
+                            <div class="comparison-examples">
+                                <h4>نمونه‌ها:</h4>
+                                <p>Llama, Mistral, Qwen, Gemma</p>
+                            </div>
+                        </div>
+
+                        <div class="comparison-card">
+                            <div class="comparison-header">
+                                <h3>مدل‌های تجاری</h3>
+                                <div class="comparison-icon commercial">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="comparison-list">
+                                <li class="pro">✓ عملکرد بهتر در اکثر موارد</li>
+                                <li class="pro">✓ بدون نیاز به سخت‌افزار</li>
+                                <li class="pro">✓ پشتیبانی و به‌روزرسانی مداوم</li>
+                                <li class="pro">✓ راه‌اندازی آسان و سریع</li>
+                                <li class="pro">✓ مقیاس‌پذیری بالا</li>
+                                <li class="con">✗ هزینه استفاده مداوم</li>
+                                <li class="con">✗ نیاز به اینترنت همیشگی</li>
+                                <li class="con">✗ محدودیت در داده‌های حساس</li>
+                                <li class="con">✗ محدودیت Rate Limit</li>
+                                <li class="con">✗ وابستگی به سرویس شخص ثالث</li>
+                            </ul>
+                            <div class="comparison-examples">
+                                <h4>نمونه‌ها:</h4>
+                                <p>GPT-4, Claude, Gemini Pro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benchmark-section">
+                        <h3>مقایسه عملکرد در Benchmarks</h3>
+                        <div class="benchmark-table-wrapper">
+                            <table class="benchmark-table">
+                                <thead>
+                                    <tr>
+                                        <th>مدل</th>
+                                        <th>نوع</th>
+                                        <th>MMLU</th>
+                                        <th>HumanEval</th>
+                                        <th>GSM8K</th>
+                                        <th>هزینه (1M tokens)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight">
+                                        <td>GPT-4 Turbo</td>
+                                        <td><span class="type-badge commercial">تجاری</span></td>
+                                        <td>86.4%</td>
+                                        <td>87.0%</td>
+                                        <td>92.0%</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr class="highlight">
+                                        <td>Claude 3 Opus</td>
+                                        <td><span class="type-badge commercial">تجاری</span></td>
+                                        <td>86.8%</td>
+                                        <td>84.9%</td>
+                                        <td>95.0%</td>
+                                        <td>$15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Llama 3.1 405B</td>
+                                        <td><span class="type-badge open">متن‌باز</span></td>
+                                        <td>85.2%</td>
+                                        <td>80.3%</td>
+                                        <td>89.0%</td>
+                                        <td>رایگان*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mixtral 8x22B</td>
+                                        <td><span class="type-badge open">متن‌باز</span></td>
+                                        <td>77.8%</td>
+                                        <td>75.0%</td>
+                                        <td>83.0%</td>
+                                        <td>رایگان*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Qwen 2.5 72B</td>
+                                        <td><span class="type-badge open">متن‌باز</span></td>
+                                        <td>84.2%</td>
+                                        <td>82.0%</td>
+                                        <td>91.6%</td>
+                                        <td>رایگان*</td>
+                                    </tr>
+                                    <tr class="highlight">
+                                        <td>Gemini Pro 1.5</td>
+                                        <td><span class="type-badge commercial">تجاری</span></td>
+                                        <td>85.9%</td>
+                                        <td>71.9%</td>
+                                        <td>91.7%</td>
+                                        <td>$7</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="benchmark-note">* رایگان اما نیاز به سخت‌افزار مناسب برای اجرا</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apps" class="section">
+            <div class="container">
+                <h2 class="section-title">برنامه‌های کاربردی با پشتیبانی API Key</h2>
+                <p class="section-subtitle">ابزارهایی که می‌توانید با کلید API استفاده کنید</p>
+
+                <div class="apps-grid">
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <h3>OpenWebUI</h3>
+                        <p class="app-description">رابط کاربری وب مدرن برای مدل‌های محلی و API</p>
+                        <div class="app-features">
+                            <span class="feature-tag">Local & API</span>
+                            <span class="feature-tag">Multi-Model</span>
+                            <span class="feature-tag">RAG</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>API های پشتیبانی شده:</strong>
+                            <p>OpenAI, Anthropic, Ollama, LM Studio</p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <line x1="9" y1="3" x2="9" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3>Continue.dev</h3>
+                        <p class="app-description">کمک‌کننده کدنویسی در VS Code با پشتیبانی از API های مختلف</p>
+                        <div class="app-features">
+                            <span class="feature-tag">VS Code</span>
+                            <span class="feature-tag">JetBrains</span>
+                            <span class="feature-tag">Autocomplete</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>API های پشتیبانی شده:</strong>
+                            <p>OpenAI, Anthropic, Together AI, Ollama</p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3>Cursor</h3>
+                        <p class="app-description">IDE مبتنی بر AI با قابلیت استفاده از API Key شخصی</p>
+                        <div class="app-features">
+                            <span class="feature-tag">AI IDE</span>
+                            <span class="feature-tag">Chat</span>
+                            <span class="feature-tag">Edit</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>API های پشتیبانی شده:</strong>
+                            <p>OpenAI, Anthropic (Claude)</p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+                            </svg>
+                        </div>
+                        <h3>Ollama</h3>
+                        <p class="app-description">اجرای مدل‌های محلی با API سازگار با OpenAI</p>
+                        <div class="app-features">
+                            <span class="feature-tag">Local</span>
+                            <span class="feature-tag">CLI</span>
+                            <span class="feature-tag">API Server</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>ویژگی:</strong>
+                            <p>ارائه API برای مدل‌های محلی</p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3>LM Studio</h3>
+                        <p class="app-description">اجرا و مدیریت مدل‌های محلی با رابط گرافیکی</p>
+                        <div class="app-features">
+                            <span class="feature-tag">GUI</span>
+                            <span class="feature-tag">Local Server</span>
+                            <span class="feature-tag">GGUF</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>ویژگی:</strong>
+                            <p>سرور محلی با API سازگار OpenAI</p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2v20M2 12h20"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
+                        <h3>Jan.ai</h3>
+                        <p class="app-description">پلتفرم متن‌باز برای اجرای مدل‌های AI روی سیستم شخصی</p>
+                        <div class="app-features">
+                            <span class="feature-tag">Desktop</span>
+                            <span class="feature-tag">Privacy</span>
+                            <span class="feature-tag">Offline</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>API های پشتیبانی شده:</strong>
+                            <p>OpenAI, Local Models</p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                        </div>
+                        <h3>LangChain</h3>
+                        <p class="app-description">فریم‌ورک برای ساخت برنامه‌های AI با پشتیبانی از APIهای متعدد</p>
+                        <div class="app-features">
+                            <span class="feature-tag">Python</span>
+                            <span class="feature-tag">Framework</span>
+                            <span class="feature-tag">RAG</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>API های پشتیبانی شده:</strong>
+                            <p>OpenAI, Anthropic, Cohere, HuggingFace</p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3>n8n</h3>
+                        <p class="app-description">ابزار اتوماسیون با قابلیت اتصال به APIهای مختلف AI</p>
+                        <div class="app-features">
+                            <span class="feature-tag">Automation</span>
+                            <span class="feature-tag">Workflow</span>
+                            <span class="feature-tag">No-Code</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>API های پشتیبانی شده:</strong>
+                            <p>OpenAI, Anthropic, Cohere, Hugging Face</p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <h3>LibreChat</h3>
+                        <p class="app-description">رابط چت یکپارچه برای همه مدل‌های AI</p>
+                        <div class="app-features">
+                            <span class="feature-tag">Multi-Model</span>
+                            <span class="feature-tag">Self-Hosted</span>
+                            <span class="feature-tag">Plugins</span>
+                        </div>
+                        <div class="app-apis">
+                            <strong>API های پشتیبانی شده:</strong>
+                            <p>OpenAI, Anthropic, Google, Azure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setup-guide">
+                    <h3>راهنمای تنظیم API Key</h3>
+                    <div class="guide-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>دریافت API Key</h4>
+                                <p>از وب‌سایت ارائه‌دهنده (OpenAI، Anthropic، و...) ثبت‌نام کرده و API Key دریافت کنید</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>تنظیم در برنامه</h4>
+                                <p>API Key را در تنظیمات برنامه مورد نظر وارد کنید (معمولاً در بخش Settings یا Preferences)</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>تست اتصال</h4>
+                                <p>با ارسال یک درخواست ساده، صحت عملکرد API Key را بررسی کنید</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>درباره این سایت</h4>
+                    <p>راهنمای جامع مدل‌های هوش مصنوعی برای توسعه‌دهندگان و علاقه‌مندان</p>
+                </div>
+                <div class="footer-section">
+                    <h4>لینک‌های مفید</h4>
+                    <ul>
+                        <li><a href="https://huggingface.co">Hugging Face</a></li>
+                        <li><a href="https://ollama.ai">Ollama</a></li>
+                        <li><a href="https://github.com/ollama/ollama">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>منابع</h4>
+                    <ul>
+                        <li><a href="https://openai.com/api">OpenAI API</a></li>
+                        <li><a href="https://anthropic.com">Anthropic</a></li>
+                        <li><a href="https://ai.google.dev">Google AI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>ساخته شده توسط Diako</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
